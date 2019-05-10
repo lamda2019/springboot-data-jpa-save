@@ -17,7 +17,7 @@ public class UserController {
     @RequestMapping("/")
     public List<User> get() {
 
-        userRepository.save(new User("1", "wsc", null));
+        userRepository.save(new User("1", "", null));
 
         return userRepository.findAll();
     }
